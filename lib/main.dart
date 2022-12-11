@@ -3,7 +3,7 @@ import 'package:ecommerce_app/configuration/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'home_page/home_page.dart';
-import 'place_to_visit/place_to_visit.dart';
+import 'place_to_visit/a_place_to_visit.dart';
 
 void main() {
   runApp(const MyApp());

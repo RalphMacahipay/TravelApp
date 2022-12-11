@@ -1,11 +1,11 @@
 import 'package:ecommerce_app/configuration/size_padding.dart';
 import 'package:ecommerce_app/configuration/style.dart';
-import 'package:ecommerce_app/place_to_visit/a_slider_top.dart';
+import 'package:ecommerce_app/place_to_visit/b_slider_top.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'dart:developer' as devtool show log;
 
-import 'body_lower.dart';
+import 'c_body_lower.dart';
 
 class PlaceToVisit extends StatefulWidget {
   const PlaceToVisit({super.key});
