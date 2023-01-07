@@ -2,7 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommerce_app/configuration/size_padding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'dart:developer' as devtool show log;
 
 final List<String> imageList = [
   'https://i.pinimg.com/564x/bc/d9/9e/bcd99e20db4bdb48cb8b0372ac4e9099.jpg',
@@ -44,7 +43,6 @@ class _FullScreenSliderState extends State<FullScreenSlider> {
               setState(() {
                 current = index;
               });
-              devtool.log(current.toString());
             },
             initialPage: current!,
           ),

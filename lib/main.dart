@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'home_page/home_page.dart';
 import 'place_to_visit/a_place_to_visit.dart';
+import 'profile_page/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,15 +26,16 @@ class ChoosePage extends StatefulWidget {
 
 class _ChoosePageState extends State<ChoosePage> {
   int index = 0;
-  final List<String> iconList = [
+  final List<String> _iconList = [
     'assets/home_icon_unselected.svg',
     'assets/book_icon_unselected.svg',
-    'assets/bell_icon_unselected.svg',
+    'assets/profile_icon_unselected.svg',
   ];
 
-  final List<Widget> screens = [
+  final List<Widget> _screens = [
     const HomePage(),
     const PlaceToVisit(),
+    const ProfilePage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -49,7 +51,7 @@ class _ChoosePageState extends State<ChoosePage> {
           index: index,
           height: 60,
           animationDuration: const Duration(milliseconds: 300),
-          items: iconList
+          items: _iconList
               .map((icon) => SvgPicture.asset(
                     icon,
                     color: kWhite,
@@ -62,7 +64,7 @@ class _ChoosePageState extends State<ChoosePage> {
         ),
         backgroundColor: kLighterWhite,
         // HomePage PlaceToVisit
-        body: screens[index],
+        body: _screens[index],
       ),
     );
   }

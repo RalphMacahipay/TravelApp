@@ -3,8 +3,6 @@ import 'package:ecommerce_app/configuration/style.dart';
 import 'package:ecommerce_app/place_to_visit/b_slider_top.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'dart:developer' as devtool show log;
-
 import 'c_body_lower.dart';
 
 class PlaceToVisit extends StatefulWidget {
@@ -18,8 +16,6 @@ class _PlaceToVisitState extends State<PlaceToVisit> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    devtool.log("x: ${SizeConfig.blockX! * 100}");
-    devtool.log("y: ${SizeConfig.blockY! * 100}");
     return Scaffold(
       backgroundColor: kLighterWhite,
       body: SingleChildScrollView(
@@ -40,7 +36,6 @@ class _PlaceToVisitState extends State<PlaceToVisit> {
               const Welcome(),
               SizedBox(height: SizeConfig.blockY! * 2.6),
               const Profile(),
-              //SizeConfig.blockX! * 2.5
               const SizedBox(height: 20),
               const DescriptionPalawan()
             ]),
